@@ -1,3 +1,3 @@
 <template>
-  <h3 class="text-light m-0">Page title</h3>
+  <h3 class="text-light m-0">Ускорение загрузки</h3>
 </template>
