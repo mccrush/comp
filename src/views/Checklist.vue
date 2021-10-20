@@ -24,41 +24,14 @@
 </template>
 
 <script>
-import dataBoost from '@/data/boost'
-import dataMalware from '@/data/malware'
-import dataSoftware from '@/data/software'
-import dataWindows from '@/data/windows'
-
 export default {
   props: {
     category: {
       type: String,
       default: 'boost'
-    }
-  },
-  data() {
-    return {
-      boost: JSON.parse(localStorage.getItem('cat-boost')) || dataBoost,
-      malware: JSON.parse(localStorage.getItem('cat-malware')) || dataMalware,
-      software:
-        JSON.parse(localStorage.getItem('cat-software')) || dataSoftware,
-      windows: JSON.parse(localStorage.getItem('cat-windows')) || dataWindows
-    }
-  },
-  computed: {
-    checklist() {
-      switch (this.category) {
-        case 'boost':
-          return this.boost
-        case 'malware':
-          return this.malware
-        case 'software':
-          return this.software
-        case 'windows':
-          return this.windows
-        default:
-          return this.boost
-      }
+    },
+    checklist: {
+      type: Array
     }
   },
   methods: {

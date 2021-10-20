@@ -1,5 +1,5 @@
 export default [
-  { title: 'Проверить резервные файлы на вирусы', alias: 'viruscheck', check: true },
+  { title: 'Проверить резервные файлы на вирусы', alias: 'viruscheck', check: false },
   { title: 'Создать резервную копию файлов', alias: 'copyfiles', check: false },
   { title: 'Записать модель ПК и разрядность ЦП (dxdiag)', alias: 'sisteminfo', check: false },
   { title: 'Скачать драйвера (сетевые) на флешку ', alias: 'drivers', check: false },

@@ -3,7 +3,7 @@
     <div class="container-fluid justify-content-between pt-1 pb-1">
       <ButtonBack @click="$emit('show-cat')" />
       <PageTitle />
-      <ButtonReload />
+      <ButtonReload @click="$emit('reset-checklist')" />
     </div>
   </nav>
 </template>

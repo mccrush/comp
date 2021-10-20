@@ -1,6 +1,6 @@
 export default [
   { title: 'Создать точку восстановления', alias: 'restorefirst', check: false },
-  { title: 'Отключить автозагрузку', alias: 'offauto', check: true },
+  { title: 'Отключить автозагрузку', alias: 'offauto', check: false },
   { title: 'Проверить планировщик заданий', alias: 'checkplan', check: false },
   { title: 'Удалить неиспользуемое ПО', alias: 'removesoft', check: false },
   { title: 'Удалить/заменить антивирус', alias: 'removeantivirus', check: false },
