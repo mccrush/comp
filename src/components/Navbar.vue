@@ -1,9 +1,20 @@
 <template>
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
-    <div class="container-fluid justify-content-between pt-1 pb-1">
-      <ButtonBack @click="$emit('show-cat')" />
+  <nav class="h-64 navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
+    <div
+      class="container-fluid justify-content-center pt-1 pb-1"
+      :class="{
+        'justify-content-between': myComponent === 'Checklist'
+      }"
+    >
+      <ButtonBack
+        v-if="myComponent === 'Checklist'"
+        @click="$emit('show-cat')"
+      />
       <PageTitle :pageTitle="pageTitle" />
-      <ButtonReload @click="$emit('reset-checklist')" />
+      <ButtonReload
+        v-if="myComponent === 'Checklist'"
+        @click="$emit('reset-checklist')"
+      />
     </div>
   </nav>
 </template>
@@ -22,7 +33,16 @@ export default {
   props: {
     pageTitle: {
       type: String
+    },
+    myComponent: {
+      type: String
     }
   }
 }
 </script>
+
+<style scoped>
+.h-64 {
+  height: 64px;
+}
+</style>

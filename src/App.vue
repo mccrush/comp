@@ -3,6 +3,7 @@
     @show-cat="showCat"
     @reset-checklist="resetChecklist"
     :pageTitle="pageTitle"
+    :myComponent="myComponent"
   />
   <div class="w-760 container">
     <transition name="fade" mode="out-in">
@@ -71,14 +72,14 @@ export default {
   methods: {
     showCheck({ cat }) {
       this.category = cat
-      this.myComponent = Checklist
+      this.myComponent = 'Checklist'
 
       localStorage.setItem('comp-page', 'Checklist')
       localStorage.setItem('comp-cat', cat)
     },
     showCat() {
       this.category = ''
-      this.myComponent = Category
+      this.myComponent = 'Category'
       localStorage.setItem('comp-page', 'Category')
       localStorage.removeItem('comp-cat')
     },
