@@ -1,0 +1,28 @@
+{
+  "name": "comp",
+  "version": "1.0.0",
+  "description": "Computer - справочник по настройке компьютера",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mccrush apps <mccrush2027@gmail.com> (https://mccrush.ru)",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "bugs": {
+    "url": "https://github.com/mccrush/atiop/issues"
+  },
+  "homepage": "https://github.com/mccrush/atiop",
+  "keywords": [
+    "atiop",
+    "web app"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mccrush/atiop.git"
+  }
+}
