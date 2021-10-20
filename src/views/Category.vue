@@ -6,6 +6,7 @@
         :key="cat.alias"
         class="btn btn-primary btn-lg w-100 mb-3"
         type="button"
+        @click="$emit('show-check', { cat: cat.alias })"
       >
         {{ cat.title }}
       </button>

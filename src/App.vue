@@ -1,8 +1,12 @@
 <template>
-  <Navbar />
+  <Navbar @show-cat="showCat" />
   <div class="w-760 container border">
     <transition name="fade" mode="out-in">
-      <component :is="myComponent" />
+      <component
+        :is="myComponent"
+        @show-check="showCheck"
+        :category="category"
+      />
     </transition>
   </div>
 </template>
@@ -23,12 +27,17 @@ export default {
   },
   data() {
     return {
-      myComponent: localStorage.getItem('comp-page') || 'Checklist'
+      myComponent: localStorage.getItem('comp-page') || 'Category',
+      category: localStorage.getItem('comp-cat') || 'boost'
     }
   },
   methods: {
-    getComponent(comp) {
-      this.myComponent = comp
+    showCheck(cat) {
+      this.category = cat
+      this.myComponent = Checklist
+    },
+    showCat() {
+      this.myComponent = Category
     }
   }
 }
