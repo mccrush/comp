@@ -1,7 +1,7 @@
 {
   "name": "comp",
   "version": "1.0.0",
-  "description": "Computer - справочник по настройке компьютера",
+  "description": "Comp - справочник по ремонту и настройке компьютера",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,16 +13,23 @@
     "not dead"
   ],
   "bugs": {
-    "url": "https://github.com/mccrush/atiop/issues"
+    "url": "https://github.com/mccrush/comp/issues"
   },
-  "homepage": "https://github.com/mccrush/atiop",
+  "homepage": "https://github.com/mccrush/comp",
   "keywords": [
-    "atiop",
+    "comp",
     "web app"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mccrush/atiop.git"
+    "url": "git+https://github.com/mccrush/comp.git"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "jsxBracketSameLine": true,
+    "arrowParens": "avoid",
+    "trailingComma": "none"
   }
 }
