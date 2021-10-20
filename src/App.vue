@@ -1,5 +1,9 @@
 <template>
-  <Navbar @show-cat="showCat" @reset-checklist="resetChecklist" />
+  <Navbar
+    @show-cat="showCat"
+    @reset-checklist="resetChecklist"
+    :pageTitle="pageTitle"
+  />
   <div class="w-760 container">
     <transition name="fade" mode="out-in">
       <component
@@ -16,6 +20,7 @@
 
 <script>
 import 'bootstrap/dist/css/bootstrap.min.css'
+import dataCategory from '@/data/category'
 import dataBoost from '@/data/boost'
 import dataMalware from '@/data/malware'
 import dataSoftware from '@/data/software'
@@ -32,13 +37,14 @@ export default {
   },
   data() {
     return {
+      dataCategory,
       boost: JSON.parse(localStorage.getItem('cat-boost')) || dataBoost,
       malware: JSON.parse(localStorage.getItem('cat-malware')) || dataMalware,
       software:
         JSON.parse(localStorage.getItem('cat-software')) || dataSoftware,
       windows: JSON.parse(localStorage.getItem('cat-windows')) || dataWindows,
       myComponent: localStorage.getItem('comp-page') || 'Category',
-      category: localStorage.getItem('comp-cat') || 'boost'
+      category: localStorage.getItem('comp-cat') || ''
     }
   },
   computed: {
@@ -55,6 +61,11 @@ export default {
         default:
           return this.boost
       }
+    },
+    pageTitle() {
+      return this.category
+        ? this.dataCategory.find(item => item.alias === this.category).title
+        : 'Что будем делать?'
     }
   },
   methods: {
@@ -66,8 +77,10 @@ export default {
       localStorage.setItem('comp-cat', cat)
     },
     showCat() {
+      this.category = ''
       this.myComponent = Category
       localStorage.setItem('comp-page', 'Category')
+      localStorage.removeItem('comp-cat')
     },
     resetChecklist() {
       this.checklist.map(item => {
