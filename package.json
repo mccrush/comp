@@ -4,7 +4,8 @@
   "description": "Comp - справочник по ремонту и настройке компьютера",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
   },
   "author": "mccrush apps <mccrush2027@gmail.com> (https://mccrush.ru)",
   "browserslist": [
@@ -37,6 +38,7 @@
     "vue": "^3.2.20"
   },
   "devDependencies": {
+    "@vue/cli-service": "^4.5.14",
     "@vue/compiler-sfc": "^3.2.20"
   }
 }
