@@ -32,12 +32,16 @@ export default {
     }
   },
   methods: {
-    showCheck(cat) {
+    showCheck({ cat }) {
       this.category = cat
       this.myComponent = Checklist
+
+      localStorage.setItem('comp-page', 'Checklist')
+      localStorage.setItem('comp-cat', cat)
     },
     showCat() {
       this.myComponent = Category
+      localStorage.setItem('comp-page', 'Category')
     }
   }
 }
