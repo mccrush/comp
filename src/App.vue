@@ -12,7 +12,7 @@
 <script>
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Navbar from '@/components/Navbar'
-import Category from '@/components/Category'
+import Category from '@/views/Category'
 
 export default {
   components: {
@@ -34,7 +34,7 @@ export default {
 
 <style>
 .w-760 {
-  max-width: 760px;
+  max-width: 640px;
 }
 .btn:focus,
 .btn-check:focus + .btn-outline-dark,

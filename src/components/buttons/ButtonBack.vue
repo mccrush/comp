@@ -1,5 +1,5 @@
 <template>
-  <button class="btn">
+  <button class="btn btn-outline-secondary d-flex pt-2 pb-2">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="16"

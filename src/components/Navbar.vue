@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
     <div class="container-fluid justify-content-between">
       <ButtonBack />
       <PageTitle />
@@ -11,7 +11,7 @@
 <script>
 import ButtonBack from '@/components/buttons/ButtonBack'
 import PageTitle from '@/components/PageTitle'
-import ButtonBack from '@/components/buttons/ButtonBack'
+import ButtonReload from '@/components/buttons/ButtonReload'
 
 export default {
   components: {
