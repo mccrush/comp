@@ -12,6 +12,7 @@
             type="checkbox"
             :id="check.alias"
             :checked="check.check"
+            @change="checkItem(check.alias)"
           />
           <label class="form-check-label lh-sm pt-1" :for="check.alias">
             {{ check.title }}
@@ -23,10 +24,10 @@
 </template>
 
 <script>
-import boost from '@/data/boost'
-import malware from '@/data/malware'
-import software from '@/data/software'
-import windows from '@/data/windows'
+import dataBoost from '@/data/boost'
+import dataMalware from '@/data/malware'
+import dataSoftware from '@/data/software'
+import dataWindows from '@/data/windows'
 
 export default {
   props: {
@@ -37,10 +38,11 @@ export default {
   },
   data() {
     return {
-      boost,
-      malware,
-      software,
-      windows
+      boost: JSON.parse(localStorage.getItem('cat-boost')) || dataBoost,
+      malware: JSON.parse(localStorage.getItem('cat-malware')) || dataMalware,
+      software:
+        JSON.parse(localStorage.getItem('cat-software')) || dataSoftware,
+      windows: JSON.parse(localStorage.getItem('cat-windows')) || dataWindows
     }
   },
   computed: {
@@ -57,6 +59,19 @@ export default {
         default:
           return this.boost
       }
+    }
+  },
+  methods: {
+    checkItem(alias) {
+      const index = this.checklist.findIndex(item => item.alias === alias)
+      let element = this.checklist[index]
+      element.check = !element.check
+      this.checklist[index] = element
+
+      localStorage.setItem(
+        'cat-' + this.category,
+        JSON.stringify(this.checklist)
+      )
     }
   }
 }
