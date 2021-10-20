@@ -1,3 +1,3 @@
 <template>
-  <h2 class="text-light">Page title</h2>
+  <h3 class="text-light m-0">Page title</h3>
 </template>

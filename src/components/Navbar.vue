@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
-    <div class="container-fluid justify-content-between">
+    <div class="container-fluid justify-content-between pt-1 pb-1">
       <ButtonBack />
       <PageTitle />
       <ButtonReload />

@@ -13,15 +13,17 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Navbar from '@/components/Navbar'
 import Category from '@/views/Category'
+import Checklist from '@/views/Checklist'
 
 export default {
   components: {
     Navbar,
-    Category
+    Category,
+    Checklist
   },
   data() {
     return {
-      myComponent: localStorage.getItem('comp-page') || 'Category'
+      myComponent: localStorage.getItem('comp-page') || 'Checklist'
     }
   },
   methods: {
