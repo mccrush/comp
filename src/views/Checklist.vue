@@ -8,7 +8,7 @@
       >
         <div class="form-check d-flex align-items-center">
           <input
-            class="check-size form-check-input me-2"
+            class="check-size form-check-input me-3"
             type="checkbox"
             :id="check.alias"
             :checked="check.check"
