@@ -2,7 +2,6 @@
   "name": "comp",
   "version": "1.0.0",
   "description": "Comp - справочник по ремонту и настройке компьютера",
-  "main": "index.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"

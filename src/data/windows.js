@@ -4,6 +4,7 @@ export default [
   { title: 'Записать модель ПК и разрядность ЦП (dxdiag)', alias: 'sisteminfo', check: false },
   { title: 'Скачать драйвера (сетевые) на флешку ', alias: 'drivers', check: false },
   { title: 'Сохранить параметры сетевых настроек', alias: 'networksettings', check: false },
+  { title: 'Отключить автообновление win 7', alias: 'offupdate', check: false },
   { title: 'Активировать систему', alias: 'activate', check: false },
   { title: 'Установить кодеки', alias: 'codeks', check: false },
   { title: 'Установить антивирус', alias: 'installantivirus', check: false },
