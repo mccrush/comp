@@ -4,7 +4,7 @@
       <div
         v-for="check in checklist"
         :key="check.alias"
-        class="shadow-sm rounded w-100 mb-2 ps-3 pt-2 pe-2 pb-2"
+        class="check-item shadow-sm rounded w-100 mb-2 ps-3 pt-2 pe-2 pb-2"
       >
         <div class="form-check d-flex align-items-center">
           <input
@@ -53,5 +53,21 @@ export default {
 .check-size {
   width: 24px;
   height: 24px;
+}
+
+.check-item {
+  color: #f2f2f2;
+  background-color: #253144;
+}
+
+.form-check-input:focus {
+  border-color: #f25c05;
+  outline: 0;
+  box-shadow: none;
+}
+
+.form-check-input:checked {
+  background-color: #f25c05;
+  border-color: #f25c05;
 }
 </style>

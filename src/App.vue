@@ -112,9 +112,14 @@ export default {
 </script>
 
 <style>
+body {
+  background-color: #32425a;
+}
+
 .w-760 {
   max-width: 640px;
 }
+
 .btn:focus,
 .btn-check:focus + .btn-outline-dark,
 .form-control:focus,

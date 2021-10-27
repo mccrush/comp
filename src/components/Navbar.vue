@@ -45,4 +45,9 @@ export default {
 .h-64 {
   height: 64px;
 }
+
+.bg-dark {
+  background-color: #253144 !important;
+  color: #f2f2f2;
+}
 </style>

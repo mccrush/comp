@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar fixed-bottom navbar-light bg-light border-top">
+  <nav class="navbar fixed-bottom navbar-dark bg-dark">
     <div class="container-fluid d-flex justify-content-center">
       <ButtonSettings
         data-bs-toggle="offcanvas"
@@ -18,3 +18,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.bg-dark {
+  background-color: #253144 !important;
+  color: #f2f2f2;
+}
+</style>
