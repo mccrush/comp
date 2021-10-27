@@ -5,7 +5,7 @@
     :pageTitle="pageTitle"
     :myComponent="myComponent"
   />
-  <div class="w-760 container">
+  <div class="w-760 container mb-5">
     <transition name="fade" mode="out-in">
       <component
         :is="myComponent"
@@ -15,26 +15,33 @@
       />
     </transition>
   </div>
+  <Footer />
+  <Menu />
 </template>
 
  
 
 <script>
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Offcanvas from 'bootstrap/js/dist/offcanvas'
 import dataCategory from '@/data/category'
 import dataBoost from '@/data/boost'
 import dataMalware from '@/data/malware'
 import dataSoftware from '@/data/software'
 import dataWindows from '@/data/windows'
 import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 import Category from '@/views/Category'
 import Checklist from '@/views/Checklist'
+import Menu from '@/components/Menu'
 
 export default {
   components: {
     Navbar,
+    Footer,
     Category,
-    Checklist
+    Checklist,
+    Menu
   },
   data() {
     return {
