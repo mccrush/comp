@@ -15,7 +15,7 @@
       ></button>
     </div>
     <div class="offcanvas-body">
-      <ButtonClear />
+      <ButtonClear @click="$emit('clear-data')" />
     </div>
   </div>
 </template>

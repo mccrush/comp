@@ -16,7 +16,7 @@
     </transition>
   </div>
   <Footer />
-  <Menu />
+  <Menu @clear-data="clearData" />
 </template>
 
  
@@ -98,6 +98,14 @@ export default {
         'cat-' + this.category,
         JSON.stringify(this.checklist)
       )
+    },
+    clearData() {
+      localStorage.removeItem('comp-cat')
+      localStorage.removeItem('comp-page')
+      localStorage.removeItem('cat-boost')
+      localStorage.removeItem('cat-malware')
+      localStorage.removeItem('cat-software')
+      localStorage.removeItem('cat-windows')
     }
   }
 }
