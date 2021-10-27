@@ -100,6 +100,9 @@ export default {
       )
     },
     clearData() {
+      this.checklist.map(item => {
+        item.check = false
+      })
       localStorage.removeItem('comp-cat')
       localStorage.removeItem('comp-page')
       localStorage.removeItem('cat-boost')

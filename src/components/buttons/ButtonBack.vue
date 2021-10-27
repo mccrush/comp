@@ -15,3 +15,16 @@
     </svg>
   </button>
 </template>
+
+<style scoped>
+.btn-outline-secondary {
+  color: #ccc;
+  border-color: #32425a;
+}
+
+.btn-outline-secondary:hover {
+  color: #ccc;
+  background-color: #32425a;
+  border-color: #32425a;
+}
+</style>

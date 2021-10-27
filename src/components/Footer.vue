@@ -23,5 +23,6 @@ export default {
 .bg-dark {
   background-color: #253144 !important;
   color: #f2f2f2;
+  border-top: 1px solid #32425a;
 }
 </style>
