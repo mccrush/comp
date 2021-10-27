@@ -1,5 +1,5 @@
 <template>
-  <button class="btn btn-outline-secondary border-0 d-flex pt-2 pb-2">
+  <button class="btn btn-outline-secondary d-flex pt-2 pb-2">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="16"
@@ -17,3 +17,15 @@
     </svg>
   </button>
 </template>
+
+<style scoped>
+.btn-outline-secondary {
+  color: #ccc;
+  border-color: #32425a;
+}
+
+.btn-outline-secondary:hover {
+  color: #ccc;
+  background-color: #32425a;
+}
+</style>

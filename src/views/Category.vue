@@ -4,7 +4,7 @@
       <button
         v-for="cat in category"
         :key="cat.alias"
-        class="btn btn-primary btn-lg border-0 w-100 mb-3"
+        class="btn btn-primary btn-lg border-0 w-100 mb-3 pt-3 pb-3"
         type="button"
         @click="$emit('show-check', { cat: cat.alias })"
       >

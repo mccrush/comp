@@ -1,5 +1,5 @@
 <template>
-  <button class="btn btn-dark w-100">
+  <button class="btn btn-dark border-0 w-100">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="16"
@@ -19,3 +19,10 @@
     Очистить кэш
   </button>
 </template>
+
+<style scoped>
+.btn-dark {
+  color: #ccc;
+  background-color: #32425a;
+}
+</style>

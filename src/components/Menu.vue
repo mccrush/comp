@@ -1,6 +1,6 @@
 <template>
   <div
-    class="offcanvas offcanvas-bottom"
+    class="offcanvas offcanvas-bottom bg-dark"
     tabindex="-1"
     id="menuBar"
     aria-labelledby="menuBarLabel"
@@ -28,3 +28,11 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.bg-dark {
+  background-color: #253144 !important;
+  color: #f2f2f2;
+  border-top: 1px solid #32425a;
+}
+</style>
