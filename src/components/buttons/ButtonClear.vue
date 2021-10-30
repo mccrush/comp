@@ -1,5 +1,5 @@
 <template>
-  <button class="btn btn-dark border-0 w-100">
+  <button class="btn btn-dark w-100">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="16"
@@ -23,6 +23,20 @@
 <style scoped>
 .btn-dark {
   color: #ccc;
+  border: 1px solid #32425a;
+  background-color: #253144;
+  transition: 0.3s ease;
+}
+
+.btn-dark:hover {
+  color: #ccc;
+  border: 1px solid #253144;
   background-color: #32425a;
+}
+
+.btn-dark:active {
+  color: #ccc;
+  border: 1px solid #253144;
+  background-color: #253144;
 }
 </style>

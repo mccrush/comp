@@ -30,4 +30,10 @@
   background-color: #32425a;
   border-color: #32425a;
 }
+
+.btn-outline-secondary:active {
+  color: #ccc;
+  border: 1px solid #253144;
+  background-color: #253144;
+}
 </style>

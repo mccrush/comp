@@ -14,8 +14,10 @@
         aria-label="Close"
       ></button>
     </div>
-    <div class="offcanvas-body">
-      <ButtonClear @click="$emit('clear-data')" />
+    <div class="offcanvas-body d-flex justify-content-center">
+      <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
+        <ButtonClear @click="$emit('clear-data')" />
+      </div>
     </div>
   </div>
 </template>
