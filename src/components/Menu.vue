@@ -17,6 +17,21 @@
     <div class="offcanvas-body d-flex justify-content-center">
       <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
         <ButtonClear @click="$emit('clear-data')" />
+        <p class="copy-right d-block badge small text-center mt-4 mx-auto">
+          Powered by
+          <a
+            href="https://mccrush.ru"
+            title="Перейти на сайт mccrush.ru"
+            target="_blank"
+            >mccrush.ru</a
+          >&nbsp;&nbsp;★&nbsp;&nbsp;Fork me on
+          <a
+            href="https://github.com/mccrush/comp"
+            title="Перейти на сайт github.com"
+            target="_blank"
+            >GitHub</a
+          >
+        </p>
       </div>
     </div>
   </div>
@@ -36,5 +51,15 @@ export default {
   background-color: #253144 !important;
   color: #f2f2f2;
   border-top: 1px solid #32425a;
+}
+
+.copy-right,
+.copy-right a {
+  color: #ccc;
+}
+
+.copy-right a:hover {
+  color: #ccc;
+  text-decoration: none;
 }
 </style>
